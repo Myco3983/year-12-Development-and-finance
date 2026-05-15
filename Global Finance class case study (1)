@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IB Global Politics — Development &amp; Sustainability: Video Resources</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B2340;
+    --navy-mid: #2C3A63;
+    --gold: #C8963E;
+    --gold-light: #F5E6CC;
+    --ivory: #F8F6F0;
+    --white: #FFFFFF;
+    --muted: #6B7280;
+    --border: #E4DDD0;
+    --power: #3B2E6E;
+    --power-bg: #EDE9F7;
+    --sov: #7C3A1E;
+    --sov-bg: #FAE9DC;
+    --leg: #1A5235;
+    --leg-bg: #DCF0E5;
+    --inter: #1A3F6F;
+    --inter-bg: #DCE9F7;
+    --gpc: #7C1A1A;
+    --gpc-bg: #FAE0DC;
+    --paper: #1A4A6E;
+    --paper-bg: #DCF0FA;
+    --hl: #4A1A6E;
+    --hl-bg: #EEE0FA;
+    --cs: #1A5235;
+    --cs-bg: #DCEEE5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--ivory);
+    color: var(--navy);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* HEADER */
+  header {
+    background: var(--navy);
+    color: white;
+    padding: 4rem 2rem 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: rgba(200, 150, 62, 0.12);
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 30%;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: rgba(200, 150, 62, 0.07);
+  }
+
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  header h1 span {
+    color: var(--gold);
+  }
+
+  .header-desc {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.75);
+    max-width: 560px;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .concept-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 1.5rem;
+  }
+
+  .concept-chip {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 99px;
+    letter-spacing: 0.04em;
+  }
+
+  .chip-power { background: rgba(150,130,220,0.2); color: #C5B8F0; border: 0.5px solid rgba(150,130,220,0.3); }
+  .chip-sov   { background: rgba(220,160,100,0.2); color: #E8C07A; border: 0.5px solid rgba(220,160,100,0.3); }
+  .chip-leg   { background: rgba(100,200,140,0.2); color: #80D4A0; border: 0.5px solid rgba(100,200,140,0.3); }
+  .chip-inter { background: rgba(100,160,230,0.2); color: #80B4E8; border: 0.5px solid rgba(100,160,230,0.3); }
+  .chip-gpc   { background: rgba(220,100,90,0.2);  color: #E89088; border: 0.5px solid rgba(220,100,90,0.3); }
+  .chip-label { background: transparent; color: rgba(255,255,255,0.4); border: 0.5px solid rgba(255,255,255,0.15); font-size: 10px; letter-spacing: 0.1em; }
+
+  /* HOW TO USE */
+  .how-to {
+    background: var(--gold-light);
+    border-left: 3px solid var(--gold);
+    padding: 1.25rem 1.5rem;
+    margin: 2.5rem auto;
+    max-width: 860px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .how-to h3 {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+
+  .how-to p {
+    font-size: 14px;
+    color: var(--navy-mid);
+    line-height: 1.65;
+  }
+
+  /* MAIN CONTENT */
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+  }
+
+  /* SECTION */
+  .section {
+    margin-top: 3rem;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.25rem;
+  }
+
+  .section-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* CARD */
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+    border-color: #C8963E55;
+    box-shadow: 0 4px 20px rgba(27,35,64,0.07);
+  }
+
+  .card-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 0.75rem;
+  }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 9px;
+    border-radius: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .badge-found   { background: #E8E4F5; color: #3B2E6E; }
+  .badge-con     { background: #FAE4E4; color: #7C1A1A; }
+  .badge-pro     { background: #DCF0E5; color: #1A5235; }
+  .badge-nuance  { background: #FAE9DC; color: #7C3A1E; }
+  .badge-hook    { background: #F5E6CC; color: #7C5A1A; }
+
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--navy);
+  }
+
+  .card-title a {
+    color: var(--navy);
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--gold);
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .card-title a:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0.5rem 0 0.9rem;
+  }
+
+  .meta-item {
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .meta-icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.6;
+  }
+
+  .card-note {
+    font-size: 14px;
+    color: #4A5568;
+    line-height: 1.7;
+    padding-left: 1rem;
+    border-left: 2px solid var(--border);
+    margin-bottom: 1rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 0.5rem;
+  }
+
+  .tag {
+    font-size: 11px;
+    font-weight: 400;
+    padding: 3px 10px;
+    border-radius: 99px;
+    border: 1px solid;
+  }
+
+  .tag-power { background: var(--power-bg); color: var(--power); border-color: #C0B4E8; }
+  .tag-sov   { background: var(--sov-bg);   color: var(--sov);   border-color: #E8C8A8; }
+  .tag-leg   { background: var(--leg-bg);   color: var(--leg);   border-color: #A8D8BC; }
+  .tag-inter { background: var(--inter-bg); color: var(--inter); border-color: #A8C8E8; }
+  .tag-gpc   { background: var(--gpc-bg);   color: var(--gpc);   border-color: #E8B0A8; }
+  .tag-paper { background: var(--paper-bg); color: var(--paper); border-color: #A8D0E8; }
+  .tag-hl    { background: var(--hl-bg);    color: var(--hl);    border-color: #C8A8E8; }
+  .tag-cs    { background: var(--cs-bg);    color: var(--cs);    border-color: #A8D0BC; }
+  .tag-gen   { background: #F0EDE8; color: #5A5040; border-color: #D8D0C0; }
+
+  .pair-note {
+    margin-top: 0.75rem;
+    font-size: 12px;
+    color: var(--inter);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--inter-bg);
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+
+  /* SEQUENCING GUIDE */
+  .guide {
+    background: var(--navy);
+    color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+
+  .guide h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .guide p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 1.25rem;
+    line-height: 1.65;
+  }
+
+  .guide-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .guide-step {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(200,150,62,0.2);
+    border: 1px solid rgba(200,150,62,0.4);
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .step-text {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+  }
+
+  .step-text strong {
+    color: white;
+    font-weight: 500;
+  }
+
+  /* ESSAY PROMPT */
+  .essay-box {
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-top: 2rem;
+    background: rgba(200,150,62,0.08);
+  }
+
+  .essay-label {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .essay-prompt {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  /* LEGEND */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+  }
+
+  .leg-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .leg-sq {
+    width: 10px; height: 10px;
+    border-radius: 3px;
+  }
+
+  /* SL / HL PILLS ON CARDS */
+  .level-pills { display: flex; gap: 5px; margin-bottom: 8px; }
+  .lp { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 99px; letter-spacing: 0.07em; text-transform: uppercase; }
+  .lp-sl  { background: #E0F2FE; color: #0369A1; border: 1px solid #7DD3FC; }
+  .lp-hl  { background: #FEF3C7; color: #92400E; border: 1px solid #FCD34D; }
+  .lp-both { background: #F0FDF4; color: #166534; border: 1px solid #86EFAC; }
+
+  /* SL/HL OVERVIEW BOX */
+  .slhl-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: 640px) { .slhl-overview { grid-template-columns: 1fr; } }
+  .slhl-box {
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    border: 1px solid;
+  }
+  .slhl-box-sl { background: #F0F9FF; border-color: #7DD3FC; }
+  .slhl-box-hl { background: #FFFBEB; border-color: #FCD34D; }
+  .slhl-box-title {
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.08em; margin-bottom: 0.5rem;
+  }
+  .slhl-box-sl .slhl-box-title { color: #0369A1; }
+  .slhl-box-hl .slhl-box-title { color: #92400E; }
+  .slhl-box ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+  .slhl-box li { font-size: 13px; color: var(--navy); padding-left: 14px; position: relative; line-height: 1.5; }
+  .slhl-box li::before { content: '–'; position: absolute; left: 0; color: var(--muted); }
+
+  /* THEORY HL/SL BADGE */
+  .theory-level { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 99px; letter-spacing: 0.07em; text-transform: uppercase; display: inline-block; margin-bottom: 6px; }
+  .tl-sl   { background: #E0F2FE; color: #0369A1; border: 1px solid #7DD3FC; }
+  .tl-hl   { background: #FEF3C7; color: #92400E; border: 1px solid #FCD34D; }
+  .tl-both { background: #F0FDF4; color: #166534; border: 1px solid #86EFAC; }
+
+  /* PAPER 3 HL BOX */
+  .p3-box {
+    background: #FFFBEB;
+    border: 1px solid #FCD34D;
+    border-left: 4px solid #F59E0B;
+    border-radius: 10px;
+    padding: 1.25rem 1.4rem;
+    margin-top: 1.25rem;
+  }
+  .p3-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #92400E; margin-bottom: 0.5rem; }
+  .p3-title { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: var(--navy); margin-bottom: 0.6rem; }
+  .p3-body { font-size: 13px; color: #374151; line-height: 1.65; }
+  .p3-list { list-style: none; padding: 0; margin-top: 0.75rem; display: flex; flex-direction: column; gap: 5px; }
+  .p3-list li { font-size: 13px; color: #374151; padding-left: 16px; position: relative; line-height: 1.5; }
+  .p3-list li::before { content: '→'; position: absolute; left: 0; color: #F59E0B; }
+
+  /* EXAM PREP */
+  .examprep {
+    margin-top: 2.5rem;
+    border-top: 2px solid var(--gold);
+    padding-top: 2.5rem;
+  }
+
+  .ep-header { margin-bottom: 1.5rem; }
+  .ep-label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+  .ep-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+  .ep-subtitle { font-size: 14px; color: var(--muted); line-height: 1.6; }
+  .ep-section-label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    border-left: 3px solid var(--gold);
+    padding-left: 10px;
+    margin: 2rem 0 0.75rem;
+  }
+  .ep-intro { font-size: 14px; color: #4A5568; line-height: 1.7; margin-bottom: 1.25rem; }
+
+  /* MARK BANDS */
+  .mb-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  @media (max-width: 640px) { .mb-grid { grid-template-columns: 1fr; } }
+  .mb-card {
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem;
+    border: 1px solid;
+  }
+  .mb-low   { background: #FEF2F2; border-color: #FECACA; }
+  .mb-mid   { background: #FFFBEB; border-color: #FDE68A; }
+  .mb-high  { background: #EFF6FF; border-color: #BFDBFE; }
+  .mb-top   { background: #F0FDF4; border-color: #86EFAC; }
+  .mb-range {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .mb-low .mb-range   { color: #DC2626; }
+  .mb-mid .mb-range   { color: #D97706; }
+  .mb-high .mb-range  { color: #2563EB; }
+  .mb-top .mb-range   { color: #16A34A; }
+  .mb-level {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+    color: var(--muted);
+  }
+  .mb-list { list-style: none; padding: 0; margin-bottom: 0.75rem; }
+  .mb-list li {
+    font-size: 13px;
+    color: var(--navy);
+    padding: 3px 0 3px 16px;
+    position: relative;
+    line-height: 1.5;
+  }
+  .mb-list li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--muted);
+  }
+  .mb-avoid {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--muted);
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding-top: 0.6rem;
+    line-height: 1.5;
+  }
+
+  /* KEY TERMS */
+  .terms-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 640px) { .terms-grid { grid-template-columns: 1fr; } }
+  .term-block {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+  }
+  .term-concept {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 3px 10px;
+    border-radius: 99px;
+    display: inline-block;
+    margin-bottom: 0.85rem;
+  }
+  .term-list { display: flex; flex-direction: column; gap: 10px; }
+  .term-item { display: flex; flex-direction: column; gap: 2px; }
+  .term-name { font-size: 13px; font-weight: 500; color: var(--navy); }
+  .term-def { font-size: 12px; color: var(--muted); line-height: 1.55; }
+
+  /* THEORY */
+  .theory-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 640px) { .theory-grid { grid-template-columns: 1fr; } }
+  .theory-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .theory-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .theory-thinker {
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .theory-claim {
+    font-size: 13px;
+    color: #374151;
+    line-height: 1.6;
+    border-left: 2px solid var(--gold);
+    padding-left: 10px;
+    font-style: italic;
+  }
+  .theory-apply, .theory-counter {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .theory-apply strong, .theory-counter strong {
+    color: var(--navy);
+    font-weight: 500;
+  }
+
+  /* CASE STUDIES */
+  .cs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 640px) { .cs-grid { grid-template-columns: 1fr; } }
+  .cs-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cs-icon { font-size: 24px; }
+  .cs-theme {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .cs-connect { font-size: 13px; color: #374151; line-height: 1.65; }
+  .cs-links {
+    background: var(--ivory);
+    border-radius: 8px;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .cs-link-label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+    margin-bottom: 3px;
+  }
+  .cs-link-item { font-size: 12px; color: #374151; line-height: 1.5; padding-left: 12px; position: relative; }
+  .cs-link-item::before { content: '→'; position: absolute; left: 0; color: var(--gold); }
+  .cs-prompt {
+    font-size: 13px;
+    color: var(--navy-mid);
+    line-height: 1.6;
+    background: var(--gold-light);
+    border-radius: 6px;
+    padding: 0.6rem 0.8rem;
+  }
+
+  /* DOS AND DON'TS */
+  .dos-box {
+    margin-top: 1.5rem;
+    background: var(--navy);
+    border-radius: 12px;
+    padding: 1.75rem;
+    color: white;
+  }
+  .dos-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+  }
+  .dos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  @media (max-width: 640px) { .dos-grid { grid-template-columns: 1fr; } }
+  .dos-label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+  }
+  .dos-do   { color: #6EE7B7; }
+  .dos-dont { color: #FCA5A5; }
+  .dos-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+  .dos-list li {
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.55;
+  }
+  .dos-list li::before { content: '–'; position: absolute; left: 0; color: rgba(255,255,255,0.3); }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 3rem;
+  }
+
+  footer strong { color: var(--navy); }
+
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    header { padding: 2.5rem 1.25rem 2rem; }
+    main { padding: 0 1.25rem 3rem; }
+    .card { padding: 1.1rem; }
+    header h1 { font-size: 1.75rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-label">IB Global Politics · Development &amp; Sustainability · 2024 Syllabus</div>
+    <h1>Global Finance &amp;<br><span>the Debt Cycle</span></h1>
+    <p class="header-desc">A curated set of videos exploring how international finance shapes — and sometimes traps — developing countries in cycles of debt. Watch, take notes, and bring your ideas to class.</p>
+    <div class="concept-strip">
+      <span class="concept-chip chip-label">Core concepts</span>
+      <span class="concept-chip chip-power">Power</span>
+      <span class="concept-chip chip-sov">Sovereignty</span>
+      <span class="concept-chip chip-leg">Legitimacy</span>
+      <span class="concept-chip chip-inter">Interdependence</span>
+      <span class="concept-chip chip-label" style="margin-left:6px;">HL GPCs</span>
+      <span class="concept-chip chip-gpc">Poverty</span>
+      <span class="concept-chip chip-gpc">Environment</span>
+      <span class="concept-chip chip-gpc">Health</span>
+    </div>
+  </div>
+</header>
+
+<div class="how-to" style="margin-left:auto;margin-right:auto;padding-left:2rem;">
+  <h3>How to use this page</h3>
+  <p>Videos are arranged in a suggested viewing order — from foundational explainers through to case studies and counter-arguments. Each card includes a short note on what to look out for and which IB concepts it connects to. Click any video title to open it. For Paper 2 preparation, focus especially on Sections 2, 3 and 4.</p>
+</div>
+
+<main>
+
+  <div class="legend">
+    <div class="leg-item"><div class="leg-sq" style="background:#E8E4F5;border:1px solid #C0B4E8;"></div>Foundational</div>
+    <div class="leg-item"><div class="leg-sq" style="background:#FAE4E4;border:1px solid #E8B0A8;"></div>Critical perspective</div>
+    <div class="leg-item"><div class="leg-sq" style="background:#DCF0E5;border:1px solid #A8D8BC;"></div>Positive case</div>
+    <div class="leg-item"><div class="leg-sq" style="background:#FAE9DC;border:1px solid #E8C8A8;"></div>Nuanced / counter-view</div>
+  </div>
+
+  <!-- SECTION 1 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <span class="section-title">Lesson starters — what is the debt cycle?</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-found">Foundational</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/watch?v=t893tGBLxEM" target="_blank" rel="noopener">Why developing countries are stuck in a vicious cycle of debt</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~12 min
+        </span>
+        <span class="meta-item">Straits Times / Asian Insider · Dec 2024</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span></div>
+      <div class="card-note">3.3 billion people live in countries spending more on debt interest than on health or education. A strong opening to the unit — it establishes the scale of the problem and introduces key actors (IMF, World Bank, private lenders) clearly. As you watch, ask: who has power in these relationships, and why?</div>
+      <div class="tags">
+        <span class="tag tag-inter">Interdependence</span>
+        <span class="tag tag-power">Power</span>
+        <span class="tag tag-gpc">GPC: Poverty</span>
+        <span class="tag tag-gpc">GPC: Health</span>
+        <span class="tag tag-paper">Paper 2 context</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-found">Foundational</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/watch?v=37Yh7QRnA1M" target="_blank" rel="noopener">The secret organisation behind the world's debt trap</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~8 min
+        </span>
+        <span class="meta-item">Explainer · Feb 2026</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span></div>
+      <div class="card-note">Explains how the IMF was set up, who controls it, and how loan conditionality works in practice. Think about the concept of legitimacy as you watch: who gave the IMF its authority, and is that authority fair?</div>
+      <div class="tags">
+        <span class="tag tag-power">Power</span>
+        <span class="tag tag-leg">Legitimacy</span>
+        <span class="tag tag-gen">Actors &amp; stakeholders</span>
+        <span class="tag tag-paper">Paper 2 context</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <span class="section-title">The critical case — finance as a tool of dependency</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-con">Critical</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/watch?v=qYfM6EpSFIE" target="_blank" rel="noopener">How the IMF keeps poor countries in a debt trap</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~20 min
+        </span>
+        <span class="meta-item">Hidden Story of Global Finance · Oct 2025</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span><span class="lp lp-hl">HL: theory-rich</span></div>
+      <div class="card-note">Argues that IMF conditions — privatisation, austerity, trade liberalisation — structurally disadvantage borrowing states. This is a key video for Paper 2. As you watch, identify: what specific policies are criticised, and what evidence is given? Do you find the argument convincing?</div>
+      <div class="tags">
+        <span class="tag tag-power">Power</span>
+        <span class="tag tag-sov">Sovereignty</span>
+        <span class="tag tag-hl">HL: Dependency theory</span>
+        <span class="tag tag-hl">HL: Susan Strange</span>
+        <span class="tag tag-gpc">GPC: Poverty</span>
+        <span class="tag tag-paper">Paper 2 essay</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-con">Critical</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/watch?v=r7dcBf677CU" target="_blank" rel="noopener">The IMF debt trap and how to get out of it</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~18 min
+        </span>
+        <span class="meta-item">Political Economist Grieve Chelwa · Apr 2023</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span><span class="lp lp-hl">HL: Wallerstein / Strange</span></div>
+      <div class="card-note">An academic explains why Global South countries keep returning to the IMF. One of the most analytically rich videos in this list — it introduces Wallerstein's core–periphery model and the Washington Consensus critique without using those terms directly. HL students: listen for structural power arguments. Everyone: note Chelwa's own positionality as a Global South economist.</div>
+      <div class="tags">
+        <span class="tag tag-power">Power</span>
+        <span class="tag tag-inter">Interdependence</span>
+        <span class="tag tag-hl">HL: Wallerstein</span>
+        <span class="tag tag-hl">HL: Washington Consensus</span>
+        <span class="tag tag-gpc">GPC: Poverty</span>
+        <span class="tag tag-paper">Paper 2 essay</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <span class="section-title">China's Belt &amp; Road — development or debt trap?</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-con">Critical</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/watch?v=0coUiuG5gG4" target="_blank" rel="noopener">The global debt crisis — is the world on the brink of collapse?</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~42 min total — focus on the Sri Lanka section (~10 min)
+        </span>
+        <span class="meta-item">DW Documentary · Dec 2023</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span><span class="lp lp-hl">HL: Paper 3 case study</span></div>
+      <div class="card-note">The Sri Lanka Hambantota Port case study is one of the most important in the D&amp;S unit. A country took Chinese loans to build a port, couldn't repay, and signed over the port on a 99-year lease. Questions to consider: did Sri Lanka lose sovereignty? Was this China's intention, or an unforeseen consequence? This is a German public broadcaster — note that perspective too.</div>
+      <div class="tags">
+        <span class="tag tag-sov">Sovereignty</span>
+        <span class="tag tag-power">Power</span>
+        <span class="tag tag-leg">Legitimacy</span>
+        <span class="tag tag-cs">Case study: Sri Lanka</span>
+        <span class="tag tag-paper">Paper 2 essay</span>
+        <span class="tag tag-hl">HL Paper 3</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-nuance">Counter-view</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/watch?v=O37Hchn5nO8" target="_blank" rel="noopener">Belt and Road Initiative is anything but a debt trap</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~5 min
+        </span>
+        <span class="meta-item">CGTN Africa (Chinese state media) · 2019</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span><span class="lp lp-sl">SL: Paper 1 source task</span></div>
+      <div class="card-note">African economists argue that BRI supports African growth without burdening taxpayers. This is a short but important counter-argument — and the source matters. CGTN is Chinese state media. Before accepting or rejecting the argument, ask: who made this? Why? What might they leave out? This is exactly the kind of source evaluation Paper 1 tests.</div>
+      <div class="tags">
+        <span class="tag tag-leg">Legitimacy</span>
+        <span class="tag tag-gen">Source positionality</span>
+        <span class="tag tag-cs">Case study: Africa / BRI</span>
+        <span class="tag tag-paper">Paper 1 source task</span>
+      </div>
+      <div class="pair-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/></svg>
+        Pair with the DW documentary above — these two make an ideal source-comparison exercise
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 4 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <span class="section-title">State agency — resisting the debt cycle</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-nuance">Nuanced</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/watch?v=yJnbFwFjYOy" target="_blank" rel="noopener">Africa shuts down the West's debt trap — IMF &amp; World Bank exposed</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~15 min
+        </span>
+        <span class="meta-item">Commentary · Jan 2026</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span></div>
+      <div class="card-note">Kenya's parliament voted to reject further IMF loan conditions — a significant act of sovereign resistance. This video challenges narratives that frame developing countries as passive victims. How does this change your understanding of sovereignty and agency? What are the risks of refusing IMF support?</div>
+      <div class="tags">
+        <span class="tag tag-sov">Sovereignty</span>
+        <span class="tag tag-leg">Legitimacy</span>
+        <span class="tag tag-power">Power</span>
+        <span class="tag tag-cs">Case study: Kenya</span>
+        <span class="tag tag-gen">Actor agency</span>
+        <span class="tag tag-paper">Paper 2 essay</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <span class="section-title">The positive case — finance as a development pathway</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-pro">Positive case</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/watch?v=XA7Id4Y9rQY" target="_blank" rel="noopener">The SDGs explained: hope, hype, and hard truths</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~22 min
+        </span>
+        <span class="meta-item">Academic commentary · Jan 2026</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span><span class="lp lp-hl">HL: GPC Poverty / Environment</span></div>
+      <div class="card-note">Situates the debt debate within the SDG framework — and the $2.5 trillion annual gap in development financing. If global finance is the problem, what's the alternative? This video explores what finance designed around development goals rather than creditor interests might look like. Key for connecting the sustainability dimension to the finance debate.</div>
+      <div class="tags">
+        <span class="tag tag-inter">Interdependence</span>
+        <span class="tag tag-leg">Legitimacy</span>
+        <span class="tag tag-gpc">GPC: Environment</span>
+        <span class="tag tag-gpc">GPC: Health</span>
+        <span class="tag tag-gen">SDG 17</span>
+        <span class="tag tag-paper">Paper 2 essay</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-pro">Positive case</span>
+        <div>
+          <div class="card-title"><a href="https://www.ted.com/talks/min_zhu_interconnectivity_the_new_structure_of_the_world_economy" target="_blank" rel="noopener">Interconnectivity: the new structure of the world economy</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~14 min
+        </span>
+        <span class="meta-item">Min Zhu (IMF Senior Economist) · TED</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span><span class="lp lp-sl">SL: Paper 1 source task</span></div>
+      <div class="card-note">A senior IMF economist argues that deep global financial interdependence — properly governed — can prevent cascading crises and lift countries out of poverty. This is the institutional argument for global finance. Note: the speaker works for the IMF itself. Does that affect how you evaluate the argument? Compare this directly with Chelwa (Section 2).</div>
+      <div class="tags">
+        <span class="tag tag-inter">Interdependence</span>
+        <span class="tag tag-power">Power</span>
+        <span class="tag tag-gen">Source positionality</span>
+        <span class="tag tag-gen">Actor: IGO</span>
+        <span class="tag tag-paper">Paper 1 source task</span>
+      </div>
+      <div class="pair-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/></svg>
+        Pair with Grieve Chelwa (Section 2) — two very different answers to the same question
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 6 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <span class="section-title">Quick watch — hook or discussion starter</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-top">
+        <span class="badge badge-hook">Hook</span>
+        <div>
+          <div class="card-title"><a href="https://www.youtube.com/shorts/V5fE2BeiTRM" target="_blank" rel="noopener">Confessions of an economic hitman: how the debt trap works</a></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ~3 min
+        </span>
+        <span class="meta-item">YouTube Short · 2026</span>
+      </div>
+      <div class="level-pills"><span class="lp lp-both">SL + HL</span><span class="lp lp-hl">HL: neo-colonialism lens</span></div>
+      <div class="card-note">Based on John Perkins' book — a deliberately provocative claim that Western finance institutions use debt to extend political and economic dominance. Strong hook for generating discussion. Before taking it at face value: what evidence does it give? Is this a credible source? What might it be overstating?</div>
+      <div class="tags">
+        <span class="tag tag-power">Power</span>
+        <span class="tag tag-gen">Source evaluation</span>
+        <span class="tag tag-gen">Contestation</span>
+        <span class="tag tag-hl">HL: Neo-colonialism</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEQUENCING GUIDE -->
+  <div class="guide">
+    <h3>Suggested viewing sequence</h3>
+    <p>You don't have to watch everything at once — here's a recommended order if you're building your understanding from scratch.</p>
+    <div class="guide-steps">
+      <div class="guide-step">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Start with Section 1</strong> — get a clear picture of the scale of global debt and the key institutions involved before moving to the arguments.</div>
+      </div>
+      <div class="guide-step">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Section 2 for the critical case</strong> — these are the most analytically demanding videos and the most useful for Paper 2 essays. Take notes on specific claims and evidence.</div>
+      </div>
+      <div class="guide-step">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Section 3 as a source-comparison task</strong> — watch the DW and CGTN videos back-to-back. Note where they agree and disagree, and why their perspectives differ.</div>
+      </div>
+      <div class="guide-step">
+        <div class="step-num">4</div>
+        <div class="step-text"><strong>Section 4 on agency</strong> — this challenges the idea that developing countries are passive. How does the Kenya case change the argument?</div>
+      </div>
+      <div class="guide-step">
+        <div class="step-num">5</div>
+        <div class="step-text"><strong>Section 5 for balance</strong> — after building the critical case, engage seriously with the pro-finance argument. Does Zhu's case hold up against Chelwa's?</div>
+      </div>
+      <div class="guide-step">
+        <div class="step-num">6</div>
+        <div class="step-text"><strong>Section 6 anytime</strong> — use the 3-minute hook at the start or end of a session to generate a quick discussion.</div>
+      </div>
+    </div>
+
+    <div class="essay-box">
+      <div class="essay-label">Paper 2 — practice essay prompt</div>
+      <div class="essay-prompt">"Evaluate the extent to which global finance promotes rather than inhibits development."</div>
+    </div>
+  </div>
+
+  <!-- EXAM PREP SECTION -->
+  <div class="examprep">
+
+    <div class="ep-header">
+      <div class="ep-title-row">
+        <div>
+          <div class="ep-label">First Assessment May 2026</div>
+          <h2 class="ep-title">What examiners are looking for</h2>
+          <p class="ep-subtitle">Use this section alongside the videos to build a response that hits the top mark band. Check your level below — SL and HL sit the same Paper 2, but HL students also have Paper 3.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slhl-overview">
+      <div class="slhl-box slhl-box-sl">
+        <div class="slhl-box-title">SL — Standard Level</div>
+        <ul>
+          <li><strong>Paper 1</strong> — source-based (1 hr) · 30 marks · 30%</li>
+          <li><strong>Paper 2</strong> — extended response (1 hr 45 min) · 30 marks · 45%</li>
+          <li><strong>Engagement Project</strong> — internal assessment · 25%</li>
+          <li>Paper 2: answer one question from <strong>Section A</strong> (thematic study) and one from <strong>Section B</strong> (cross-thematic)</li>
+          <li>Focus: four core concepts · case studies · contested meanings of development</li>
+        </ul>
+      </div>
+      <div class="slhl-box slhl-box-hl">
+        <div class="slhl-box-title">HL — Higher Level</div>
+        <ul>
+          <li><strong>Paper 1</strong> — same as SL · 25%</li>
+          <li><strong>Paper 2</strong> — same as SL · 35%</li>
+          <li><strong>Paper 3</strong> — stimulus-based, HL only (1 hr) · 20%</li>
+          <li><strong>Engagement Project</strong> — IA · 20%</li>
+          <li>Paper 3 tests your <strong>independently researched case studies</strong> on Global Political Challenges (GPCs): Poverty, Environment, Health + 5 more</li>
+          <li>HL extension: deeper theoretical frameworks, GPC lines of inquiry</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MARK BANDS -->
+    <div class="ep-section-label">The mark bands — where does your essay sit?</div>
+    <p class="ep-intro"><strong>Paper 2 is the same paper for SL and HL.</strong> It has two sections. Section A asks you to respond to one thematic study (Development &amp; Sustainability in this case). Section B asks an <em>integrating</em> question that requires you to link across all three thematic studies and the core topics. Each question is marked out of 15.</p>
+
+    <div class="mb-grid">
+      <div class="mb-card mb-low">
+        <div class="mb-range">1–4 marks</div>
+        <div class="mb-level">Limited</div>
+        <ul class="mb-list">
+          <li>Descriptive rather than analytical</li>
+          <li>Arguments poorly structured or unclear</li>
+          <li>Little relevant knowledge present</li>
+          <li>Claims unsupported by evidence or examples</li>
+          <li>No engagement with counterclaims</li>
+        </ul>
+        <div class="mb-avoid">Avoid: listing facts about the IMF without explaining what they reveal about <em>power</em> or <em>legitimacy</em>.</div>
+      </div>
+      <div class="mb-card mb-mid">
+        <div class="mb-range">5–9 marks</div>
+        <div class="mb-level">Adequate</div>
+        <ul class="mb-list">
+          <li>Some understanding of the question's demands</li>
+          <li>Structured but lacks coherence or depth</li>
+          <li>Examples mentioned but underdeveloped</li>
+          <li>Limited justification of claims</li>
+          <li>Diverse perspectives not fully explored</li>
+        </ul>
+        <div class="mb-avoid">Common issue: describing what happened in Sri Lanka without explaining what it reveals about sovereignty or structural power.</div>
+      </div>
+      <div class="mb-card mb-high">
+        <div class="mb-range">10–12 marks</div>
+        <div class="mb-level">Good</div>
+        <ul class="mb-list">
+          <li>Demands of question understood and addressed</li>
+          <li>Well-structured with coherent arguments</li>
+          <li>Relevant examples developed and linked to claims</li>
+          <li>Conceptual understanding demonstrated throughout</li>
+          <li>Counterclaims explored and evaluated</li>
+        </ul>
+        <div class="mb-avoid">To push higher: explicitly name concepts and explain <em>why</em> your example matters, not just what happened.</div>
+      </div>
+      <div class="mb-card mb-top">
+        <div class="mb-range">13–15 marks</div>
+        <div class="mb-level">Excellent</div>
+        <ul class="mb-list">
+          <li>All demands of the question addressed, including implications</li>
+          <li>Accurate knowledge used to <em>strengthen</em> arguments, not just illustrate them</li>
+          <li>Strong conceptual grasp — concepts integrated, not bolted on</li>
+          <li>All main points justified; arguments fully coherent</li>
+          <li>Counterclaims genuinely engaged with, not just acknowledged</li>
+        </ul>
+        <div class="mb-avoid">Top marks require synthesis: show how your Sri Lanka / Kenya / climate justice cases work <em>together</em> to build a nuanced argument.</div>
+      </div>
+    </div>
+
+    <!-- KEY TERMS -->
+    <div class="ep-section-label" style="margin-top:2.5rem;">Key terms and concepts to deploy</div>
+    <p class="ep-intro">The examiner expects conceptual language woven into your argument — not listed at the start. Use these terms where they genuinely sharpen your point.</p>
+
+    <div class="terms-grid">
+      <div class="term-block">
+        <div class="term-concept c-power">Power</div>
+        <div class="term-list">
+          <div class="term-item"><span class="term-name">Structural power</span><span class="term-def">Susan Strange — the ability to shape the rules others must follow (e.g. the IMF setting conditionality terms)</span></div>
+          <div class="term-item"><span class="term-name">Hard power</span><span class="term-def">Coercive economic leverage — withholding loans, imposing austerity conditions</span></div>
+          <div class="term-item"><span class="term-name">Soft power</span><span class="term-def">Using development finance to build relationships and influence — arguably China's BRI strategy</span></div>
+          <div class="term-item"><span class="term-name">Hegemony</span><span class="term-def">Dominance sustained through institutions and norms, not just force — the Washington Consensus as hegemonic ideology</span></div>
+        </div>
+      </div>
+
+      <div class="term-block">
+        <div class="term-concept c-sov">Sovereignty</div>
+        <div class="term-list">
+          <div class="term-item"><span class="term-name">Conditional sovereignty</span><span class="term-def">Sovereignty constrained by loan conditions — states remain formally sovereign but policy choices are externally determined</span></div>
+          <div class="term-item"><span class="term-name">Economic sovereignty</span><span class="term-def">A state's ability to control its own fiscal and monetary policy — eroded by IMF conditionality</span></div>
+          <div class="term-item"><span class="term-name">Debt-trap diplomacy</span><span class="term-def">Contested term — the claim that lenders deliberately create debt dependency to extract strategic concessions (e.g. Hambantota Port)</span></div>
+        </div>
+      </div>
+
+      <div class="term-block">
+        <div class="term-concept c-leg">Legitimacy</div>
+        <div class="term-list">
+          <div class="term-item"><span class="term-name">Democratic legitimacy</span><span class="term-def">Do IMF/World Bank decisions reflect the interests of those they affect? Weighted voting gives richer states disproportionate influence</span></div>
+          <div class="term-item"><span class="term-name">Output legitimacy</span><span class="term-def">Legitimacy derived from effective outcomes — if structural adjustment produces growth, is that sufficient justification?</span></div>
+          <div class="term-item"><span class="term-name">Contested legitimacy</span><span class="term-def">Kenya's parliament rejection of IMF conditions as an act of asserting popular legitimacy over international institutional authority</span></div>
+        </div>
+      </div>
+
+      <div class="term-block">
+        <div class="term-concept c-inter">Interdependence</div>
+        <div class="term-list">
+          <div class="term-item"><span class="term-name">Asymmetric interdependence</span><span class="term-def">Interdependence that benefits one party more — Global South states need capital; lenders hold leverage</span></div>
+          <div class="term-item"><span class="term-name">Complex interdependence</span><span class="term-def">Keohane &amp; Nye — multiple channels of connection reduce the usefulness of force, but economic power still dominates</span></div>
+          <div class="term-item"><span class="term-name">Dependency</span><span class="term-def">A structural condition, not just a policy choice — some states are locked into borrowing regardless of government preferences</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THEORETICAL FRAMEWORKS -->
+    <div class="ep-section-label" style="margin-top:2.5rem;">Theoretical frameworks — how to use them in your essay</div>
+    <p class="ep-intro">Theory in Paper 2 is a tool, not a label. Don't just name a theory — use it to explain <em>why</em> something happened and what it reveals. <span style="background:#E0F2FE;color:#0369A1;padding:2px 8px;border-radius:99px;font-size:12px;font-weight:500;">SL</span> students are expected to demonstrate conceptual understanding; <span style="background:#FEF3C7;color:#92400E;padding:2px 8px;border-radius:99px;font-size:12px;font-weight:500;">HL</span> students must apply frameworks analytically in Paper 2 <em>and</em> use them to structure independently researched case studies in Paper 3.</p>
+
+    <div class="theory-grid">
+      <div class="theory-card">
+        <span class="theory-level tl-both">SL + HL</span>
+        <div class="theory-name">Dependency Theory</div>
+        <div class="theory-thinker">Frank, Prebisch, Cardoso</div>
+        <div class="theory-claim">The global economic system is structured to keep peripheral (developing) states dependent on core (wealthy) states. Trade and finance reinforce this — they don't resolve it.</div>
+        <div class="theory-apply"><strong>Apply to:</strong> IMF conditionality that opens developing markets to foreign goods, undermining local industry. The "revolving door" of repeated IMF loans. Zambia and Sri Lanka as peripheral states.</div>
+        <div class="theory-counter"><strong>Challenge it with:</strong> China's BRI shows dependency isn't exclusively Western — or that South–South finance replicates the same dynamics.</div>
+      </div>
+
+      <div class="theory-card">
+        <span class="theory-level tl-hl">HL focus</span>
+        <div class="theory-name">World-Systems Theory</div>
+        <div class="theory-thinker">Wallerstein</div>
+        <div class="theory-claim">The world is divided into a core, semi-periphery and periphery. Finance flows from core to periphery with interest, locking in inequality. Development within the system is constrained by design.</div>
+        <div class="theory-apply"><strong>Apply to:</strong> Structural adjustment as a mechanism for maintaining core–periphery relations. The $2.5 trillion SDG financing gap as evidence of systemic under-investment.</div>
+        <div class="theory-counter"><strong>Challenge it with:</strong> South Korea, Singapore and China as counter-examples of periphery states that escaped the system — though some argue this was exceptional.</div>
+      </div>
+
+      <div class="theory-card">
+        <span class="theory-level tl-both">SL + HL</span>
+        <div class="theory-name">Liberal Institutionalism</div>
+        <div class="theory-thinker">Keohane, Nye, IMF institutional view</div>
+        <div class="theory-claim">International institutions like the IMF and World Bank enable cooperation, reduce risk, and can promote development — if properly governed. Interdependence creates mutual incentives for responsible behaviour.</div>
+        <div class="theory-apply"><strong>Apply to:</strong> The SDG 17 framework as an example of institutionalised cooperation. Min Zhu's TED argument for managed interdependence.</div>
+        <div class="theory-counter"><strong>Challenge it with:</strong> Who controls the institutions? Weighted voting means wealthy states shape the rules. Institutions can embed power asymmetries, not neutralise them.</div>
+      </div>
+
+      <div class="theory-card">
+        <span class="theory-level tl-hl">HL focus</span>
+        <div class="theory-name">Structural Power</div>
+        <div class="theory-thinker">Susan Strange</div>
+        <div class="theory-claim">True power in global politics is the ability to shape the structures within which others make decisions — control of finance, production, security, and knowledge. The US and IMF exercise structural power over borrowing states.</div>
+        <div class="theory-apply"><strong>Apply to:</strong> IMF conditionality as structural power — states are not forced to borrow, but the conditions they accept shape all subsequent policy choices. Washington Consensus as a knowledge structure.</div>
+        <div class="theory-counter"><strong>Challenge it with:</strong> Kenya's rejection of IMF terms suggests structural power has limits — states can refuse, at a cost.</div>
+      </div>
+    </div>
+
+    <!-- CASE STUDY CONNECTIONS -->
+    <div class="ep-section-label" style="margin-top:2.5rem;">Connecting your own case studies — climate justice &amp; global governance</div>
+    <p class="ep-intro">Paper 2 Section B asks integrating questions that require you to connect across thematic studies. Your own researched case studies on climate justice and global governance can strengthen both Section A and Section B responses — here's how.</p>
+
+    <div class="cs-grid">
+      <div class="cs-card">
+        <div class="cs-icon">🌍</div>
+        <div class="cs-theme">Climate Justice</div>
+        <div class="cs-connect">The debt cycle intersects directly with climate vulnerability. Countries with the highest debt burdens are often those most exposed to climate impacts (flooding, drought, crop failure) — yet they have the least fiscal space to invest in adaptation or green transition. This is a <em>justice</em> argument about who pays for a crisis they did not cause.</div>
+        <div class="cs-links">
+          <div class="cs-link-label">Link to these videos:</div>
+          <div class="cs-link-item">SDGs explainer (Section 5) → the $2.5tn financing gap includes climate adaptation finance</div>
+          <div class="cs-link-item">IMF debt trap (Section 2) → austerity cuts environmental budgets first</div>
+          <div class="cs-link-item">Sri Lanka case (Section 3) → economic collapse accelerates environmental degradation</div>
+        </div>
+        <div class="cs-prompt"><strong>Essay angle:</strong> "To what extent does the global finance system inhibit climate justice for developing states?" Use your own case study + Sri Lanka + SDG gap as a three-point argument.</div>
+      </div>
+
+      <div class="cs-card">
+        <div class="cs-icon">🏛️</div>
+        <div class="cs-theme">Global Governance</div>
+        <div class="cs-connect">Who governs global finance — and in whose interests? The IMF, World Bank, G20, and WTO all play roles, but their decision-making structures are weighted toward wealthy states. Your global governance case study can interrogate whether these institutions have the <em>legitimacy</em> to impose conditions on sovereign states.</div>
+        <div class="cs-links">
+          <div class="cs-link-label">Link to these videos:</div>
+          <div class="cs-link-item">The IMF explainer (Section 1) → who controls voting shares?</div>
+          <div class="cs-link-item">Grieve Chelwa (Section 2) → governance as a mechanism of structural power</div>
+          <div class="cs-link-item">Kenya rejection (Section 4) → state resistance as a challenge to governance legitimacy</div>
+        </div>
+        <div class="cs-prompt"><strong>Essay angle:</strong> "Evaluate the claim that global financial governance lacks legitimacy." Use your case study + Kenya + Min Zhu's counter-argument to build a balanced evaluation.</div>
+      </div>
+
+      <div class="cs-card" style="grid-column: 1 / -1;">
+        <div class="cs-icon">✏️</div>
+        <div class="cs-theme">Section B integrating tip</div>
+        <div class="cs-connect">Section B questions require you to link across <strong>Development &amp; Sustainability</strong>, <strong>Rights &amp; Justice</strong>, and <strong>Peace &amp; Conflict</strong>. The debt cycle is a strong thread across all three: it shapes what rights states can afford to protect (health, education), creates conditions for political instability, and raises fundamental questions of global justice. When you see a Section B question, ask: how does the debt/finance angle connect to the other thematic studies?</div>
+        <div class="cs-links">
+          <div class="cs-link-label">Possible cross-thematic links:</div>
+          <div class="cs-link-item"><strong>D&amp;S → Rights &amp; Justice:</strong> Austerity cuts health and education spending — what does this mean for economic and social rights?</div>
+          <div class="cs-link-item"><strong>D&amp;S → Peace &amp; Conflict:</strong> Economic collapse driven by debt can fuel political instability and conflict (Sri Lanka 2022 protests; Zambia unrest)</div>
+          <div class="cs-link-item"><strong>All three:</strong> Climate finance debt locks vulnerable states into a cycle where they cannot invest in prevention, adaptation, or post-conflict recovery</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAPER 3 HL BOX -->
+    <div class="p3-box">
+      <div class="p3-label">HL only · Paper 3</div>
+      <div class="p3-title">Preparing your independently researched case studies</div>
+      <div class="p3-body">Paper 3 is a stimulus-based paper where you respond to unseen material using <strong>your own researched case studies</strong> on Global Political Challenges. For the debt/finance topic, the most directly relevant GPCs are <strong>Poverty</strong>, <strong>Environment</strong>, and <strong>Health</strong>. Your case studies should go significantly deeper than the videos — use these clips as orientation, then build your own evidence base. Here's what Paper 3 examiners expect your case studies to include:</div>
+      <ul class="p3-list">
+        <li><strong>A specific, named example</strong> with precise factual detail — not "a developing country" but "Sri Lanka, 2022" or "Zambia's sovereign default, 2020"</li>
+        <li><strong>A GPC lens applied</strong> — how does your case illustrate the GPC you've researched? What does it reveal about the political challenge?</li>
+        <li><strong>At least one theoretical framework</strong> applied analytically — Wallerstein, Strange, or dependency theory for this topic area</li>
+        <li><strong>Multiple actor perspectives</strong> — state, IGO, civil society, and ideally a Global South voice (e.g. Chelwa's argument, Kenya's parliament)</li>
+        <li><strong>A contested conclusion</strong> — what does the evidence suggest, and what remains genuinely debated? Paper 3 rewards intellectual honesty about complexity</li>
+        <li><strong>A connection to core concepts</strong> — Power, Sovereignty, Legitimacy, or Interdependence should be visible in your analysis, not just named</li>
+      </ul>
+    </div>
+
+    <!-- DOS AND DON'TS -->
+    <div class="dos-box">
+      <div class="dos-title">Before you write — examiner checklist</div>
+      <div class="dos-grid">
+        <div>
+          <div class="dos-label dos-do">✓ Do this (SL + HL)</div>
+          <ul class="dos-list">
+            <li>Directly answer the question in your opening — state your argument clearly</li>
+            <li>Use concepts (power, sovereignty, legitimacy, interdependence) as analytical tools, not decorations</li>
+            <li>Develop each case study: what happened, why it matters, what concept it illustrates</li>
+            <li>Include a genuine counterclaim — engage with it, don't just list it</li>
+            <li>Synthesise at the end: what does the weight of evidence suggest?</li>
+            <li>Reference diverse perspectives — Global South voices alongside institutional ones</li>
+            <li><span style="color:#FCD34D;font-weight:500;">HL additionally:</span> name and apply a theoretical framework explicitly; link to your Paper 3 GPC case studies in Section B responses</li>
+          </ul>
+        </div>
+        <div>
+          <div class="dos-label dos-dont">✗ Avoid this (SL + HL)</div>
+          <ul class="dos-list">
+            <li>Describing what happened without explaining what it <em>reveals</em> about global politics</li>
+            <li>Naming a theory without applying it to your evidence</li>
+            <li>Using the same case study for every point — examiners want range</li>
+            <li>Treating the question as settled — the best essays acknowledge genuine complexity</li>
+            <li>Ignoring the sustainability dimension — this is a D&amp;S question, not just development</li>
+            <li>Quoting a video directly — paraphrase and attribute the argument</li>
+            <li><span style="color:#FCA5A5;font-weight:500;">HL: don't</span> use your Paper 3 case studies as decoration — they should anchor your argument, not illustrate it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <strong>IB Global Politics · Development and Sustainability</strong><br>
+  2024 syllabus · First assessment May 2026 · Prepared by BISW
+</footer>
+
+</body>
+</html>
